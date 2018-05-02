@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: repeating-linear-gradient(
+            45deg,
+            #8da567,
+            #8da567 3px,
+            #FFFFFF 3px,
+            #FFFFFF 5px
+    );
+}
+
+.border {
+    background-color: #e0b05a;
+    margin-left: 8%;
+    width: 84%;
+}
+
+.body-image {
+    width: 100%;
+}
+.mySlides {
+    width: 100%;
+}
+.wrapper {
+    width: 96%;
+    background-color: white;
+    position: relative;
+    margin-left: 2%;
+}
+
+#header-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 536px;
+}
+
+li {
+    border-bottom: 1px solid #e0b05a;
+}
+
+nav {
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    color: skyblue;
+    margin-left: 10%;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #e0b05a;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #e0b05a;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #8da567;
+    curser: hand;
+}
+
+a:active {
+    text-decoration: none;
+    color: darksalmon;
+}
+
+
+
+p {
+    display: inline;
+    padding-right: 16px;
+    font-family: face, tahoma;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+
+h1 {
+    font-size: 24px;
+    color: #e0b05a;
+    font-family: Tahoma;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+.group-header{
+    font-size: 24px;
+    color: #e0b05a;
+    font-family: Tahoma;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+#button-odd{
+    width:100%;
+    height: 40px;
+    background-color: #e0b05a;
+    color:white;
+    font-size:20px;
+    text-align:left;
+    border:1px solid lightgrey;
+}
+
+#button-even{
+    width:100%;
+    height: 40px;
+    background-color: white;
+    color:#e0b05a;
+    font-size:20px;
+    text-align:left;
+    border:1px solid lightgrey;
+}
+
+.menu{
+    display:none;
+    font-size:24px;
+}
+
+hr {
+    color: lightgrey;
+}
+ul{
+    list-style-type:none;
+    font-family: face, tahoma;
+    font-size: 18px;
+}
