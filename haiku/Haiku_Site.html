@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="Haiku.css"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Haiku Japanese Bistro</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="border">
+    <div class="wrapper">
+        <img id="header-image" src="Artboard%201.png" alt="logo" />
+        <nav>
+            <a href="#about">
+                <p id="nav-section-01">About</p>
+            </a>
+            <a href="#happyhour">
+                <p id="nav-section-02">Happy Hour</p>
+            </a>
+            <a href="#menu">
+                <p id="nav-section-03">Menu</p>
+            </a>
+            <a href="#delivery">
+                <p id="nav-section-04">Delivery</p>
+            </a>
+            <a href="#location">
+                <p id="nav-section-05">Location</p>
+            </a>
+        </nav>
+        <div id="top"></div>
+        <img class="mySlides" src="mainsus.jpg">
+        <img class="mySlides" src="mainsushi.jpg">
+        <img class="mySlides" src="rest.JPG">
+        <img class="mySlides" src="display.jpg">
+        <div id="about" class="group-header">About
+        </div>
+        <p> Welcome to Haiku Japanese Bistro and Sushi Bar! Our newly remodeled location features spacious dining areas, a large sushi bar, and a full length bar. Whether a quick bite to eat during lunch break or getting together for dinner with friends, Haiku is a traditional Japanese restaurant for all to enjoy.  Serving extensive wine, beer, sake and all of your favorite drinks. The bar is an excellent spot to relax and enjoy Minnesota’s night life.</p>
+        <img class="body-image" src="pexels-photo-343870.jpeg"/>
+        <div id="happyhour" class="group-header">
+            <h1>Happy Hour</h1>
+        </div>
+        <p>Happy hour is from 2-5 and 9-11 daily. All happy hour drinks and food are only $3. Come drink!</p>
+        <button id="button-odd" onclick="toggleMenu('winelist')">Wine</button>
+        <div class="menu" id="winelist">
+            <ul>
+                <li>Chardonnay</li>
+                <li>Pinot Grigio</li>
+                <li>Cabernet Sauvignon</li>
+                <li>Merlot</li>
+                <li>White Zinfandel</li>
+            </ul>
+        </div>
+        <button id="button-even" onclick="toggleMenu('beerlist')">Beers</button>
+        <div class="menu" id="beerlist">
+            <ul>
+                <li>Blue Moon</li>
+                <li>Bud Light</li>
+                <li>Beer</li>
+            </ul>
+        </div>
+        <button id="button-odd" onclick="toggleMenu('raillist')">Rails</button>
+        <div class="menu" id="raillist">
+            <ul>
+                <li>White Eagle Vodka</li>
+                <li>Rondiaz Rum</li>
+                <li>English Guard Gin</li>
+                <li>Durango Tequila</li>
+                <li>T&L Scotch</li>
+                <li>Petri Brandy</li>
+            </ul>
+        </div>
+        <button id="button-even" onclick="toggleMenu('sushilist')">Sushi</button>
+        <div class="menu" id="sushilist">
+            <ul>
+                <li>Asparagus Roll</li>
+                <li>Avocado Roll</li>
+                <li>Kappa Roll</li>
+                <li>Oshinko Roll</li>
+                <li>AAC Roll</li>
+                <li>California Roll</li>
+                <li>Sweet Potato Roll</li>
+                <li>Salmon Avocado Roll</li>
+                <li>Spicy Salmon/Tuna/Crab</li>
+                <li>Shrimp Tempura</li>
+                <li>Rainbow Roll</li>
+                <li>Dragon Roll</li>
+            </ul>
+        </div>
+        <button id="button-odd" onclick="toggleMenu('applist')">Appetizers</button>
+        <div class="menu" id="applist">
+            <ul>
+                <li>Edamame</li>
+                <li>Gyoza</li>
+                <li>Vegetable Gyoza</li>
+                <li>Yakitori</li>
+                <li>Shu Mai</li>
+                <li>Vegetable Tempura</li>
+                <li>Fried Calamari</li>
+                <li>Fried Scallops</li>
+                <li>Fried Chicken Wings</li>
+                <li>Chicken Nuggets</li>
+                <li>Shrimp Tempura Combo</li>
+                <li>Spicy Mussel</li>
+                <li>Spicy Jalapeno</li>
+                <li>BBQ Beef Skewer</li>
+                <li>Rock Shrimp Tempura</li>
+            </ul>
+        </div>
+        <img class="body-image" src="beer.jpg"/>
+        <div id="menu" class="group-header">
+            <h1>Menu</h1>
+        </div>
+        <button id="button-odd" onclick="toggleMenu('souplist')">Soup and Salads</button>
+        <div class="menu" id="souplist">
+            <ul>
+                <li>Garden Salad</li>
+                <li>Avocado Salad</li>
+                <li>Seaweed Salad</li>
+                <li>Chicken Salad</li>
+                <li>Steak Salad</li>
+                <li>Shrimp Salad</li>
+                <li>Squid Salad</li>
+                <li>Kani Salad</li>
+                <li>Sashimi Salad</li>
+                <li>Lemon Tako Salad</li>
+                <li>Miso Soup</li>
+                <li>Clear Soup</li>
+                <li>Seafood Soup</li>
+                <li>Haiku Special Soupd</li>
+            </ul>
+        </div>
+        <button id="button-even" onclick="toggleMenu('sushiappslist')">Sushi Appetizers</button>
+        <div class="menu" id="sushiappslist">
+            <ul>
+                <li>Yellowtail Jalapeno</li>
+                <li>Pepper Tuna</li>
+                <li>Spicy Scallop Tartar</li>
+                <li>Sunomomo</li>
+                <li>Spicy Salmon</li>
+                <li>Spicy Tuna</li>
+                <li>Spicy Yellowtail Tartar</li>
+                <li>Spicy Tuna Pizza</li>
+                <li>Naruto</li>
+                <li>Seseame Tuna Tataki</li>
+            </ul>
+        </div>
+        <button id="button-odd" onclick="toggleMenu('kitappslist')">Kitchen Appetizers</button>
+        <div class="menu" id="kitappslist">
+            <ul>
+                <li>Edamame</li>
+                <li>Squid Ginger Yaki</li>
+                <li>Rock Shrimp Tempura</li>
+                <li>Calamari</li>
+                <li>Gyoza</li>
+                <li>Vegetable Gyoza</li>
+                <li>Shrimp Tempura Combo</li>
+                <li>Sweet Potato Tempura</li>
+                <li>Yakitori</li>
+                <li>Shumai</li>
+                <li>Soft Shell Crab</li>
+                <li>Beef Negimaki</li>
+                <li>Age Tofu</li>
+                <li>Haru Maki</li>
+                <li>Coconut Shrimp</li>
+
+            </ul>
+        </div>
+        <button id="button-even" onclick="toggleMenu('rolllist')">Roll and Hand Rolls</button>
+        <div class="menu" id="rolllist">
+            <ul>
+                <li>Asparagus Roll</li>
+                <li>Avocado Roll</li>
+                <li>Kappa Roll</li>
+                <li>Oshinko Roll</li>
+                <li>AAC Roll</li>
+                <li>California Roll</li>
+                <li>Sweet Potato Roll</li>
+                <li>Salmon Avocado Roll</li>
+                <li>Spicy Salmon/Tuna/Crab</li>
+                <li>Shrimp Tempura</li>
+                <li>Rainbow Roll</li>
+                <li>Dragon Roll</li>
+                <li>Spicy Scallop Roll</li>
+                <li>Boston Roll</li>
+                <li>Philelphia Roll</li>
+                <li>Eel Cucumber Roll</li>
+                <li>Salmon Skin Roll</li>
+                <li>Spider Roll</li>
+                <li>King Crab Avocado Roll</li>
+            </ul>
+        </div>
+        <button id="button-odd" onclick="toggleMenu('speciallist')">Chef's Special Rolls</button>
+        <div class="menu" id="speciallist">
+            <ul>
+                <li>Crazy Spider Roll</li>
+                <li>American Dream Roll</li>
+                <li>Crazy Tuna Roll</li>
+                <li>Salmon Family Roll</li>
+                <li>Sweetheart Roll</li>
+                <li>Caterpillar Roll</li>
+                <li>Mango Tango</li>
+                <li>Twin Dragon</li>
+                <li>Black Horse</li>
+                <li>Pink Lady</li>
+                <li>Dinkytown Roll</li>
+                <li>Haiku Roll</li>
+                <li>Angel Roll</li>
+                <li>Forest Roll</li>
+                <li>Black Dragon Roll</li>
+                <li>New York Roll</li>
+                <li>Double Happiness Roll</li>
+                <li>California Roll</li>
+                <li>TNT Roll</li>
+                <li>Salmon Crunch Roll</li>
+                <li>Volcano Roll</li>
+                <li>Angry Tuna Roll</li>
+                <li>Italian Roll</li>
+            </ul>
+        </div>
+        <button id="button-even" onclick="toggleMenu('hibachilist')">Hibachi Dinner</button>
+        <div class="menu" id="hibachilist">
+            <ul>
+                <li>Hibachi Vegetable</li>
+                <li>Hibachi Chicken</li>
+                <li>Hibachi Salmon</li>
+                <li>Hibachi Steak</li>
+                <li>Hibachi Shrimp</li>
+                <li>Hibachi Scallop</li>
+                <li>Hibachi Filet Mignon</li>
+                <li>Hibachi Chicken and Steak</li>
+                <li>Hibachi Chicken and Shrimp</li>
+                <li>Hibachi Steak and Shrimp</li>
+                <li>Hibachi Steak and Scallop</li>
+                <li>Hibachi Shrimp and Scallop</li>
+                <li>Hibachi Filet Mignon and Scallop</li>
+                <li>Hibachi Filet Mignon and Lobster</li>
+                <li>Hibachi Filet Mignon and Shrimp</li>
+            </ul>
+        </div>
+        <button id="button-odd" onclick="toggleMenu('sidelist')">Sides</button>
+        <div class="menu" id="sidelist">
+            <ul>
+                <li>Fried Rice</li>
+                <li>Hibachi Chicken</li>
+                <li>Hibachi Steak</li>
+                <li>Hibachi Shrimp</li>
+                <li>Hibachi Scallops</li>
+                <li>Hibachi Salmon</li>
+            </ul>
+        </div>
+        <button id="button-even" onclick="toggleMenu('dessertlist')">Desserts</button>
+        <div class="menu" id="dessertlist">
+            <ul>
+                <li>Mochi Ice Cream</li>
+                <li>Ice Cream</li>
+                <li>Fried Ice Cream</li>
+                <li>Fried Cheesecake</li>
+                <li>Key Lime Pie</li>
+            </ul>
+        </div>
+        <div id="delivery">
+            <h1>Delivery</h1>
+            <p>
+                Can't make it in to visit? No worries! We partnered with Bite Squad to bring our traditional Japanese cuisine right to your door. Available during all operating business hours. Click the image below to order now. </p> <br>
+
+            <br>
+            <center><a href="https://www.bitesquad.com/food/haiku-japanese-bistro/260"><img src="squad1.png" alt="Bite Squad"></a></center>
+        <br>
+            <hr>
+        </div>
+        <div id="location" class="group-header">
+            <h1>Location</h1>
+        </div>
+        <table>
+            <tr>
+                <tc>
+                    <div>
+                        <p>
+                            620 Washington Ave SE <br>
+                            Minneapolis, MN <br></p> <br>
+                        <h1>Phone</h1>
+                        <p>612.331.8888 <br></p>
+                        <br>
+                            <h1>Hours</h1>
+                        <p>
+                            Mon-Fri 11am-10pm<br>
+                            Sat-Sun 12pm-10pm
+                        </p>
+                    </div>
+                </tc>
+                <tc>
+                    <div>
+                        <br>
+                        <br>
+                        <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.535350758704!2d-93.23152068511017!3d44.97343477407738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b332896fceda19%3A0x246282ab8acc9b4c!2sHaiku+Japanese+Bistro!5e0!3m2!1sen!2sus!4v1523842524123" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+                    </div>
+                </tc>
+            </tr>
+        </table>
+        <footer><a href="#top">Back to top</a></footer>
+    </div>
+    <!--end of wrapper-->
+</div>
+<!--end of border-->
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+
+    function toggleMenu(section) {
+        var x = document.getElementById(section);
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+</script>
+</body>
+</html>
